@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+	<head>
+	  	<meta charset="UTF-8">
+	  	<title>The Art Collectors Game</title>
+			<link rel="stylesheet" type="text/css" href="css/reset.css">
+			<link rel="stylesheet" type="text/css" href="css/style.css">
+	  		<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+	  		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	  		<script type="text/javascript" src="javascript/artCollector.js"></script>
+	</head>
+
+	<body>
+		<!--Title/Header-->
+		<h1 id="gameTitle">Art Collector !</h1>
+		
+		<!-- Game Instructions-->
+		<div id="gameInstructions">
+			<h2>Game Instructions</h2>
+			<hr>
+			<h4>You will be given a random number at the start of the game.There are four Art Portraits by Andy Warhol below. By clicking on a portrait you will add a specific amount of points to your total score.
+			<br>
+	    	You win the game by matching your total score to a computer generated random number, you lose the game if your total score goes above the selected random number.
+	    	<br>
+	    	The value of each art portrait is hidden from you until you click on it.
+	    	<br>
+	    	Each time when the game starts, the game will change the values of each art portrait.
+			</h4>
+			<hr>	
+		</div>
+		
+		<!-- Computer Generator and Win/Loss Display-->
+		<div id="comGenWinLossArea">
+			<div id="comGenDisplay"></div>
+			<div id="winLossDisplay">Wins:<span id="wins"></span><br><br>Losses:<span id="Losses"></span></div>
+		</div>
+		
+		<!-- Users Score Display-->
+		<div id="usersScoreDisplay">Your Current Score Is:<br></div>
+
+		<!-- Art Portrait Images -->
+		<div id="artPortraitDisplay">
+		<img class="image" id= "blondie" alt="Blondie" src="images/blondie.jpeg">
+		<img class="image" id="mick" alt="Mick Jagger" src="images/mick.jpeg">
+		<img class="image" id="prince" alt="Prince" src="images/prince2.jpeg">
+		<img class="image" id="michael" alt="Michael Jackson" src="images/michael.jpeg">
+		<hr>	
+		</div>
+		
+	</body>
+</html>
